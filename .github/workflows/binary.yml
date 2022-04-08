@@ -57,7 +57,7 @@ jobs:
       run: cargo build --release
     
     - name: Archive Binary
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: nodle-chain
         path: ./target/release/nodle-chain
