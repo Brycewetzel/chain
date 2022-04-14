@@ -15,7 +15,7 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3.0.1
     - uses: actions-rs/toolchain@v1
       with:
         toolchain: ${{ env.nightly }}
@@ -68,7 +68,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3.0.1
 
     - name: Setup toolchain
       run: ./scripts/init.sh
